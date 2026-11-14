@@ -1,13 +1,13 @@
 {
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Local-first, account-free API client: a Postman alternative",
   "homepage": "https://fzn0x.github.io/getman/",
   "license": "MIT|Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/fzn0x/getman/releases/download/v0.3.2/getman-v0.3.2-x86_64-pc-windows-msvc.zip",
-      "hash": "1d1a966b8ac151995cfe3ded2bdcadc8d25675557cae16d026a8ad59cb2bc746",
-      "extract_dir": "getman-v0.3.2-x86_64-pc-windows-msvc"
+      "url": "https://github.com/fzn0x/getman/releases/download/v0.3.3/getman-v0.3.3-x86_64-pc-windows-msvc.zip",
+      "hash": "fbd624c58ce99510e3cd37bff7fbfb98f30103aff223461d61b4c7f5de09576c",
+      "extract_dir": "getman-v0.3.3-x86_64-pc-windows-msvc"
     }
   },
   "bin": "getman.exe",
