@@ -1,13 +1,18 @@
 {
-  "version": "0.3.4",
-  "description": "Local-first, account-free API client: a Postman alternative",
+  "version": "0.4.0",
+  "description": "Open-source Postman alternative written in Rust",
   "homepage": "https://fzn0x.github.io/getman/",
-  "license": "MIT|Apache-2.0",
+  "license": "MIT|GPL-3.0-or-later",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/fzn0x/getman/releases/download/v0.3.4/getman-v0.3.4-x86_64-pc-windows-msvc.zip",
-      "hash": "dcde2452451906ec01945d6bcfad00170c1bc098b27f5823b9af8b2ed5ed260f",
-      "extract_dir": "getman-v0.3.4-x86_64-pc-windows-msvc"
+      "url": "https://github.com/fzn0x/getman/releases/download/v0.4.0/getman-v0.4.0-x86_64-pc-windows-msvc.zip",
+      "hash": "cf383e6b2f0e2d6135591ce129d1e2a774382a1761ebbd9921475d8298826aca",
+      "extract_dir": "getman-v0.4.0-x86_64-pc-windows-msvc"
+    },
+    "arm64": {
+      "url": "https://github.com/fzn0x/getman/releases/download/v0.4.0/getman-v0.4.0-aarch64-pc-windows-msvc.zip",
+      "hash": "8582d2248dfb3497102b8994e6a48d07970415b08cd51626196de077765ab3e5",
+      "extract_dir": "getman-v0.4.0-aarch64-pc-windows-msvc"
     }
   },
   "bin": "getman.exe",
@@ -19,6 +24,10 @@
       "64bit": {
         "url": "https://github.com/fzn0x/getman/releases/download/v$version/getman-v$version-x86_64-pc-windows-msvc.zip",
         "extract_dir": "getman-v$version-x86_64-pc-windows-msvc"
+      },
+      "arm64": {
+        "url": "https://github.com/fzn0x/getman/releases/download/v$version/getman-v$version-aarch64-pc-windows-msvc.zip",
+        "extract_dir": "getman-v$version-aarch64-pc-windows-msvc"
       }
     },
     "hash": {
