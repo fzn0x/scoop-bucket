@@ -1,0 +1,36 @@
+{
+    "version": "0.1.1",
+    "description": "Java ME emulator that runs many games at once in one window",
+    "homepage": "https://fastemu.functionx.dev",
+    "license": "GPL-3.0-or-later",
+    "notes": "FastEmu keeps its library, saves and settings in %APPDATA%\\FastEmu, which uninstalling leaves.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/fzn0x/FastEmu/releases/download/v0.1.1/fastemu-0.1.1-windows-x64-portable.zip",
+            "hash": "69d14f1ed678e14426db01d0f631c4caa141ca5f89cb7268f58714167c791240",
+            "extract_dir": "fastemu-0.1.1-windows-x64"
+        }
+    },
+    "bin": "fastemu.com",
+    "shortcuts": [
+        [
+            "fastemu.exe",
+            "FastEmu"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/fzn0x/FastEmu"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/fzn0x/FastEmu/releases/download/v$version/fastemu-$version-windows-x64-portable.zip",
+                "extract_dir": "fastemu-$version-windows-x64"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/fzn0x/FastEmu/releases/download/v$version/SHA256SUMS",
+            "regex": "$sha256\\s+\\*?$basename"
+        }
+    }
+}
